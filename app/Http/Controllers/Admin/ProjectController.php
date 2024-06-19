@@ -15,7 +15,7 @@ class ProjectController extends Controller
     {
         $projects = Project::all();
 
-        return view('', compact('projects'));
+        return view('admin.projects', compact('projects'));
     }
 
     /**
