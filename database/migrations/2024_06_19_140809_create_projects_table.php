@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->unique();
             $table->text('readme');
             $table->string('languages');
+            $table->date('latest_fix');
             $table->string('slug')->unique();
             $table->timestamps();
         });

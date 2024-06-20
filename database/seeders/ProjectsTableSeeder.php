@@ -22,6 +22,7 @@ class ProjectsTableSeeder extends Seeder
             $newProject->title = $faker->sentence(3);
             $newProject->readme = $faker->text(300);
             $newProject->languages = $faker->word(5);
+            $newProject->latest_fix = $faker->date();
             $newProject->slug = Str::slug($newProject->title);
             $newProject->save();
         }
