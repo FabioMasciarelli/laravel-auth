@@ -7,6 +7,7 @@
                 <th scope="col">Titolo</th>
                 <th scope="col">ReadME</th>
                 <th scope="col">Linguaggi</th>
+                <th scope="col">Azioni</th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,9 @@
                     <th scope="row">{{ $project->title }}</th>
                     <td>{{ $project->readme }}</td>
                     <td>{{ $project->languages }}</td>
+                    <td>
+                        <a href="{{ route('admin.projects.show', ['project' => $project->slug]) }}" class="btn btn-info">Più dettagli</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
