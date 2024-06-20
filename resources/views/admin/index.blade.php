@@ -18,6 +18,7 @@
                     <td>{{ $project->languages }}</td>
                     <td>
                         <a href="{{ route('admin.projects.show', ['project' => $project->slug]) }}" class="btn btn-info">Più dettagli</a>
+                        <a href="{{ route('admin.projects.edit', ['project' => $project->slug]) }}" class="btn btn-warning">Modifica</a>
                     </td>
                 </tr>
             @endforeach

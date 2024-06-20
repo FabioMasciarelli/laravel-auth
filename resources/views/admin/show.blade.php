@@ -10,6 +10,6 @@
 
     <h6>Readme: {{ $project->readme }}</h6>
 
-    <h6>Linguaggi: {{ $project->languages }}</h6>
+    <h6>Linguaggio: {{ $project->languages }}</h6>
 </div>
 @endsection
